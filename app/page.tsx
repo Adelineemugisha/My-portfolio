@@ -44,7 +44,7 @@ export default function Portfolio() {
           </div>
 
           <div className="text-center md:text-left flex-1">
-            <p className="text-emerald-900 font-mono font-bold tracking-wide mb-3 text-sm sm:text-base bg-emerald-100 px-2 py-0.5 rounded w-fit mx-auto md:mx-0">
+            <p className="text-emerald-900 font-sans font-bold tracking-wide mb-3 text-sm sm:text-base bg-emerald-100 px-2 py-0.5 rounded w-fit mx-auto md:mx-0">
             Code that scales
             </p>
             <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-emerald-900 mb-4">
@@ -72,7 +72,7 @@ export default function Portfolio() {
 
         <section id="about" className="py-9 scroll-mt-16">
           <h2 className="text-3xl font-black text-emerald-900 mb-8 flex items-center gap-2">
-            <span className="text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-mono text-xl">01.</span> About Me
+            <span className="text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-sans text-xl">01.</span> About Me
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-black leading-relaxed">
             <div className="md:col-span-2 space-y-4">
@@ -92,7 +92,7 @@ export default function Portfolio() {
 
         <section id="projects" className="py-20 scroll-mt-16">
           <h2 className="text-3xl font-black text-emerald-900 mb-8 flex items-center gap-2">
-            <span className="text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-mono text-xl">02.</span> Featured Projects
+            <span className="text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-sans text-xl">02.</span> Featured Projects
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
 
@@ -103,7 +103,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Mobile App (Flutter)
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -116,7 +116,7 @@ export default function Portfolio() {
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A dedicated mobile app bridging community and healing for GBV survivors, offering anonymous group discussions, shared survivor testimonies, and powerful personal testimonies.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#FrontendMobile</span> <span>#Python</span> <span>#PostgreSQL</span>
               </div>
             </a>
@@ -127,7 +127,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Python / Backend
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -140,7 +140,7 @@ export default function Portfolio() {
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A reliable Python-based backend service that serves as the backbone for retail sales. It bridges transaction processing, secure data persistence, and inventory tracking into a unified, business-critical solution.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#Backend</span> <span>#Python</span> <span>#FastAPI</span>
               </div>
             </a>
@@ -151,7 +151,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -164,7 +164,7 @@ export default function Portfolio() {
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A user-centric React platform designed to bring circular economy solutions to rural agriculture. The application enables farmers to easily list organic waste, connect directly with biochar production facilities, and generate a new stream of sustainable revenue.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#React.js</span> <span>#WebDev</span>
               </div>
             </a>
@@ -175,7 +175,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -188,7 +188,7 @@ export default function Portfolio() {
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A responsive frontend catalog application designed for seamless collection tracking. Leveraging dynamic filtering and clean UI components, it enables users to seamlessly curate, manage, and visualize aspirational shopping lists for shoes and clothing.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#Next.js</span> <span>#TailwindCSS</span>
               </div>
             </a>
@@ -200,7 +200,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -215,7 +215,7 @@ export default function Portfolio() {
                 The platform offers curated inspiration for everyday meals and special occasions, teaching 
                 users the names, origins, and precise preparation techniques of local dishes
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#Next.js</span> <span>#TailwindCSS</span>
               </div>
             </a>
@@ -227,7 +227,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -243,7 +243,7 @@ export default function Portfolio() {
                  a user-centric directory where students can explore academic programs, compare institutions, and launch direct, secure 
                  applications to their chosen campuse
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#React.js</span> <span>#TailwindCSS</span>
               </div>
             </a>
@@ -255,7 +255,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   IOT(Internet of Things)
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -271,7 +271,7 @@ export default function Portfolio() {
                  Engineered inside the PlatformIO ecosystem, it enables hardware modules to scan networks, authenticate securely, and 
                 output live connectivity statuses onto connected OLED/LCD screens
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#C++</span> <span>#IOT</span> <span>#PlatformIo</span>
               </div>
             </a>
@@ -283,7 +283,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                 fronted/backend
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -298,7 +298,7 @@ export default function Portfolio() {
                 A sleek utility application designed to demonstrate mastery over interface layout principles and event-driven logic.
                It combines clean visual hierarchy with efficient input processing to create a seamless, accessible user workflow.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#Html</span> <span>#CSS</span>
               </div>
             </a>
@@ -310,7 +310,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                 Machine learning
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -324,7 +324,7 @@ export default function Portfolio() {
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                Designed an end-to-end binary classification pipeline to predict passenger survival outcomes based on demographic and socio-economic indicators.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#Python</span> <span>#Kaggle</span> <span>#ML</span>
               </div>
             </a>
@@ -336,7 +336,7 @@ export default function Portfolio() {
               className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm sm:text-base font-mono font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
+                <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                 fronted/backend
                 </span>
                 <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
@@ -351,7 +351,7 @@ export default function Portfolio() {
               A responsive note-taking application engineered with dynamic state management to bridge multimedia inputs. It integrates 
               audio recording APIs with persistent text storage, ensuring seamless data serialization and rapid retrieval of academic notes.
               </p>
-              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-mono text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                  <span>#Backend</span> <span>#JavaScript</span> <span>#Postgress</span>
               </div>
             </a>
@@ -361,12 +361,12 @@ export default function Portfolio() {
 
         <section id="skills" className="py-20 scroll-mt-16">
           <h2 className="text-3xl font-black text-emerald-900 mb-8 flex items-center gap-2">
-            <span className="text-emerald-600 font-mono text-xl">03.</span> Technical Capabilities
+            <span className="text-emerald-600 font-sans text-xl">03.</span> Technical Capabilities
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div className="bg-emerald-50 p-5 rounded-md border border-emerald-200">
               <h3 className="text-emerald-700 font-bold mb-3">Languages & Backend</h3>
-              <ul className="space-y-1 text-sm text-black font-mono">
+              <ul className="space-y-1 text-sm text-black font-sans">
                 <li>• Java / JavaScript</li>
                 <li>• IOT </li>
                 <li>• Python/ Backend</li>
@@ -375,7 +375,7 @@ export default function Portfolio() {
             </div>
             <div className="bg-emerald-50 p-5 rounded-md border border-emerald-200">
               <h3 className="text-emerald-700 font-bold mb-3">Frontend & Mobile</h3>
-              <ul className="space-y-1 text-sm text-black font-mono">
+              <ul className="space-y-1 text-sm text-black font-sans">
                 <li>• React.js / Next.js</li>
                 <li>• React Native</li>
                 <li>• TypeScript</li>
@@ -384,7 +384,7 @@ export default function Portfolio() {
             </div>
             <div className="bg-emerald-50 p-5 rounded-md border border-emerald-200">
               <h3 className="text-emerald-700 font-bold mb-3">AI & Product Strategy</h3>
-              <ul className="space-y-1 text-sm text-black font-mono">
+              <ul className="space-y-1 text-sm text-black font-sans">
                 <li>• Machine Learning</li>
                 <li>• UX Research / Figma</li>
                 <li>• Product Design</li>
@@ -399,10 +399,10 @@ export default function Portfolio() {
 
         <section id="case-studies" className="py-20 scroll-mt-16">
           <h2 className="text-3xl font-bold text-emerald-900 mb-8 flex items-center gap-2">
-            <span className="text-emerald-600 font-mono text-xl">04.</span> Product & UX Strategy
+            <span className="text-emerald-600 font-sans text-xl">04.</span> Product & UX Strategy
           </h2>
           <div className="border border-emerald-200 rounded-xl bg-gradient-to-r from-emerald-50 to-emerald-100 p-6 md:p-8">
-            <span className="text-xs font-mono uppercase bg-emerald-100 text-emerald-700 px-2 py-1 rounded">Agri-Tech USSD & PWA Marketplace for Zambian Smallholder Farmers</span>
+            <span className="text-xs font-sans uppercase bg-emerald-100 text-emerald-700 px-2 py-1 rounded">Agri-Tech USSD & PWA Marketplace for Zambian Smallholder Farmers</span>
             <h3 className="text-2xl font-bold text-emerald-900 mt-3 mb-2">Technology used</h3>
             <p className="text-black mb-6 max-w-2xl text-sm leading-relaxed"/>
              USSD Gateway, Progressive Web Apps (PWA), Cloud Databases, SMS APIs. 
@@ -410,7 +410,7 @@ export default function Portfolio() {
               Conducted an extensive case study identifying critical market access vulnerabilities and price exploitation challenges
               faced by rural smallholder farmers in Zambia.
             </p>
-            <div className="flex flex-wrap gap-6 text-xs text-black font-mono">
+            <div className="flex flex-wrap gap-6 text-xs text-black font-sans">
               <div><strong className="text-emerald-900">Role:</strong> Product Researcher</div>
               <div><strong className="text-emerald-900">Outcome:</strong> Prototype scored 92% on SUS scale</div>
             </div>
@@ -449,8 +449,8 @@ export default function Portfolio() {
 
       </main>
 
-      <footer className="py-8 text-center text-xs font-mono text-emerald-500">
-        © {new Date().getFullYear()} Adeline. Built with Next.js & Tailwind CSS.
+      <footer className="py-8 text-center text-xs font-sans text-emerald-500">
+        © {new Date().getFullYear()} Adeline. Alright reserved
       </footer>
     </div>
   )
