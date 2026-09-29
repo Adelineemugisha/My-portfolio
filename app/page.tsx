@@ -9,7 +9,7 @@ export default function Portfolio() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
   
           <a href="#" className="text-xl font-bold tracking-tight text-emerald-900 bg-emerald-100 px-2 py-0.5 rounded">
-            Adeline.dev
+            Backend developer
           </a>
           <nav className="hidden md:flex space-x-8 text-sm font-medium text-black">
             <a href="#about" className="hover:text-emerald-700 transition-colors">About</a>
@@ -478,7 +478,7 @@ export default function Portfolio() {
         <section id="contact" className="py-20 text-center max-w-xl mx-auto scroll-mt-16">
           <h2 className="text-3xl font-bold text-emerald-900 mb-4">Get In Touch</h2>
           <p className="text-black mb-8 text-sm leading-relaxed">
-            I am currently actively seeking full-time, graduate software engineering, or associate product management roles. 
+            I am currently actively seeking full time, Junior software engineering, or associate product management roles. 
             If you have an opening or want to collaborate, my inbox is always open!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -490,6 +490,16 @@ export default function Portfolio() {
             >
               LinkedIn
             </a>
+
+             <a 
+              href="https://github.com/Adelineemugisha" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
+            >
+              Github
+            </a>
+
             <a 
               href="mailto:adelineemugisha@gmail.com"
               className="inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
