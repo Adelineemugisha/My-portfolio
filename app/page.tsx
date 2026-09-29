@@ -16,6 +16,7 @@ export default function Portfolio() {
             <a href="#projects" className="hover:text-emerald-700 transition-colors">Projects</a>
             <a href="#skills" className="hover:text-emerald-700 transition-colors">Skills</a>
             <a href="#case-studies" className="hover:text-emerald-700 transition-colors">Product & UX</a>
+            <a href="#estateflow" className="hover:text-emerald-700 transition-colors">EstateFlow</a>
             <a href="#contact" className="hover:text-emerald-700 transition-colors">Contact</a>
           </nav>
           <a 
@@ -77,7 +78,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-3 gap-8 text-black leading-relaxed">
             <div className="md:col-span-2 space-y-4">
               <p>
-                Hello! I'm a software engineer who loves solving complex engineering problems. Because I have trained across frontend, backend, and mobile development, I understand how to tie a whole ecosystem together seamlessly.
+                Hello! I&apos;m a software engineer who loves solving complex engineering problems. Because I have trained across frontend, backend, and mobile development, I understand how to tie a whole ecosystem together seamlessly.
               </p>
               <p>
                 Beyond standard coding, I dive deep into Machine Learning to make applications smarter, and apply strict UX Research and Product Management frameworks to make sure what I build actually delivers commercial value to businesses and real joy to users.
@@ -85,7 +86,7 @@ export default function Portfolio() {
             </div>
             <div className="border-2 border-emerald-200 rounded-lg p-6 bg-emerald-50 h-fit">
               <h3 className="text-emerald-800 font-extrabold mb-2 text-lg">Core Philosophy</h3>
-              <p className="text-sm text-black">"Code is just a tool. Understanding the data patterns and the human user on the other side of the screen is what creates a great software product."</p>
+              <p className="text-sm text-black">&ldquo;Code is just a tool. Understanding the data patterns and the human user on the other side of the screen is what creates a great software product.&rdquo;</p>
             </div>
           </div>
         </section>
@@ -404,8 +405,9 @@ export default function Portfolio() {
           <div className="border border-emerald-200 rounded-xl bg-gradient-to-r from-emerald-50 to-emerald-100 p-6 md:p-8">
             <span className="text-xs font-sans uppercase bg-emerald-100 text-emerald-700 px-2 py-1 rounded">Agri-Tech USSD & PWA Marketplace for Zambian Smallholder Farmers</span>
             <h3 className="text-2xl font-bold text-emerald-900 mt-3 mb-2">Technology used</h3>
-            <p className="text-black mb-6 max-w-2xl text-sm leading-relaxed"/>
-             USSD Gateway, Progressive Web Apps (PWA), Cloud Databases, SMS APIs. 
+            <p className="text-black mb-6 max-w-2xl text-sm leading-relaxed">
+              USSD Gateway, Progressive Web Apps (PWA), Cloud Databases, SMS APIs.
+            </p>
             <p className="text-black mb-6 max-w-2xl text-sm leading-relaxed">
               Conducted an extensive case study identifying critical market access vulnerabilities and price exploitation challenges
               faced by rural smallholder farmers in Zambia.
@@ -413,6 +415,62 @@ export default function Portfolio() {
             <div className="flex flex-wrap gap-6 text-xs text-black font-sans">
               <div><strong className="text-emerald-900">Role:</strong> Product Researcher</div>
               <div><strong className="text-emerald-900">Outcome:</strong> Prototype scored 92% on SUS scale</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="estateflow" className="py-20 scroll-mt-16">
+          <h2 className="text-3xl font-bold text-emerald-900 mb-8 flex items-center gap-2">
+            <span className="text-emerald-600 font-sans text-xl">05.</span> EstateFlow
+          </h2>
+          <div className="border border-emerald-200 rounded-xl bg-gradient-to-r from-emerald-50 to-emerald-100 p-6 md:p-8">
+            <span className="text-xs font-sans uppercase bg-emerald-100 text-emerald-700 px-2 py-1 rounded">FULL-STACK REAL ESTATE LISTING PLATFORM</span>
+            <h3 className="text-2xl font-bold text-emerald-900 mt-3 mb-2">Technology used</h3>
+            <p className="text-black mb-6 max-w-2xl text-sm leading-relaxed">
+              FastAPI, React (Vite), Tailwind CSS, Async SQLAlchemy, PostgreSQL, PyJWT, Pydantic.
+            </p>
+            <p className="text-black mb-6 max-w-2xl text-sm leading-relaxed">
+              A modular, full-stack real estate application featuring secure JWT user authentication,
+              role-based listing permissions (agents vs buyers), location-based property searches, dynamic
+              image management, favorite/wishlist toggling, and an interactive buyer inquiry pipeline.
+            </p>
+            <div className="flex flex-wrap gap-6 text-xs text-black font-sans">
+              <div><strong className="text-emerald-900">Role:</strong> Full-Stack Developer</div>
+              <div><strong className="text-emerald-900">Stack:</strong> FastAPI &amp; React</div>
+            </div>
+            <div className="flex flex-wrap justify-start gap-4 mt-8">
+              <a
+                href="https://real-estate-fronted-nu.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+              >
+                Live Frontend App ↗
+              </a>
+              <a
+                href="https://real-estate-yscm.onrender.com/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+              >
+                Live Backend API ↗
+              </a>
+              <a
+                href="https://github.com/Adelineemugisha/real_estate_fronted.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+              >
+                Frontend GitHub
+              </a>
+              <a
+                href="https://github.com/Adelineemugisha/Real-Estate.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+              >
+                Backend GitHub
+              </a>
             </div>
           </div>
         </section>
