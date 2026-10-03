@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-emerald-200 selection:text-emerald-900">
+    <div className="page-enter min-h-screen bg-white text-black font-sans selection:bg-emerald-200 selection:text-emerald-900">
   
       <header className="sticky top-0 z-50 w-full border-b border-emerald-200 bg-white/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
@@ -12,16 +12,16 @@ export default function Portfolio() {
             Backend developer
           </a>
           <nav className="hidden md:flex space-x-8 text-sm font-medium text-black">
-            <a href="#about" className="hover:text-emerald-700 transition-colors">About</a>
-            <a href="#projects" className="hover:text-emerald-700 transition-colors">Projects</a>
-            <a href="#skills" className="hover:text-emerald-700 transition-colors">Skills</a>
-            <a href="#case-studies" className="hover:text-emerald-700 transition-colors">Product & UX</a>
-            <a href="#estateflow" className="hover:text-emerald-700 transition-colors">EstateFlow</a>
-            <a href="#contact" className="hover:text-emerald-700 transition-colors">Contact</a>
+            <a href="#about" className="nav-link">About</a>
+            <a href="#projects" className="nav-link">Projects</a>
+            <a href="#skills" className="nav-link">Skills</a>
+            <a href="#case-studies" className="nav-link">Product & UX</a>
+            <a href="#estateflow" className="nav-link">EstateFlow</a>
+            <a href="#contact" className="nav-link">Contact</a>
           </nav>
           <a 
             href="#contact" 
-            className="rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+            className="interactive rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
           >
             Get in touch
           </a>
@@ -60,10 +60,10 @@ export default function Portfolio() {
               codebases into profitable business solutions by aligning scalable architecture with strategic product goals.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <a href="#projects" className="rounded-md border-2 border-emerald-600 px-6 py-3 font-semibold text-emerald-700 hover:bg-emerald-600 hover:text-white transition-all duration-200">
+              <a href="#projects" className="interactive rounded-md border-2 border-emerald-600 px-6 py-3 font-semibold text-emerald-700 hover:bg-emerald-600 hover:text-white transition-all duration-200">
                 View Projects
               </a>
-              <a href="#case-studies" className="rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors">
+              <a href="#case-studies" className="interactive rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors">
                 Read UX Case Studies
               </a>
             </div>
@@ -71,7 +71,7 @@ export default function Portfolio() {
 
         </section>
 
-        <section id="about" className="py-9 scroll-mt-16">
+        <section id="about" className="reveal py-9 scroll-mt-16">
           <h2 className="text-3xl font-black text-emerald-900 mb-8 flex items-center gap-2">
             <span className="text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-sans text-xl">01.</span> About Me
           </h2>
@@ -91,28 +91,40 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="projects" className="py-20 scroll-mt-16">
+        <section id="projects" className="reveal py-20 scroll-mt-16">
           <h2 className="text-3xl font-black text-emerald-900 mb-8 flex items-center gap-2">
             <span className="text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-sans text-xl">02.</span> Featured Projects
           </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="reveal-group grid sm:grid-cols-2 gap-6">
 
-            <a 
-              href="https://github.com/Adelineemugisha/ihumure" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
+            <article
+              className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
             >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Mobile App (Flutter)
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/Adelineemugisha/ihumure"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-                ResilientVoices
+                <a
+                  href="https://github.com/Adelineemugisha/ihumure"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-emerald-700"
+                >
+                  ResilientVoices
+                </a>
               </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A dedicated mobile app bridging community and healing for GBV survivors, offering anonymous group discussions, shared survivor testimonies, and powerful personal testimonies.
@@ -120,23 +132,35 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#FrontendMobile</span> <span>#Python</span> <span>#PostgreSQL</span>
               </div>
-            </a>
-            <a 
-              href="https://github.com/Adelineemugisha/POS" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
+            </article>
+            <article
+              className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
             >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Python / Backend
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/Adelineemugisha/POS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-                Point of sale (POS)
+                <a
+                  href="https://github.com/Adelineemugisha/POS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-emerald-700"
+                >
+                  Point of sale (POS)
+                </a>
               </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A reliable Python-based backend service that serves as the backbone for retail sales. It bridges transaction processing, secure data persistence, and inventory tracking into a unified, business-critical solution.
@@ -144,23 +168,43 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#Backend</span> <span>#Python</span> <span>#FastAPI</span>
               </div>
-            </a>
-            <a 
-              href="https://github.com/Adelineemugisha/Heza-Hub" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
+            </article>
+            <article
+              className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
             >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://heza-hub-7wi8.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    Live Demo ↗
+                  </a>
+                  <a
+                    href="https://github.com/Adelineemugisha/Heza-Hub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-                Agrowaste Connect
+                <a
+                  href="https://github.com/Adelineemugisha/Heza-Hub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-emerald-700"
+                >
+                  Agrowaste Connect
+                </a>
               </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A user-centric React platform designed to bring circular economy solutions to rural agriculture. The application enables farmers to easily list organic waste, connect directly with biochar production facilities, and generate a new stream of sustainable revenue.
@@ -168,23 +212,43 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#React.js</span> <span>#WebDev</span>
               </div>
-            </a>
-            <a 
-              href="https://github.com/Adelineemugisha/shopping-list" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left"
+            </article>
+            <article
+              className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
             >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://adeline-fan-page.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    Live Demo ↗
+                  </a>
+                  <a
+                    href="https://github.com/Adelineemugisha/shopping-list"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-                StyleInspo
+                <a
+                  href="https://github.com/Adelineemugisha/shopping-list"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-emerald-700"
+                >
+                  StyleInspo
+                </a>
               </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A responsive frontend catalog application designed for seamless collection tracking. Leveraging dynamic filtering and clean UI components, it enables users to seamlessly curate, manage, and visualize aspirational shopping lists for shoes and clothing.
@@ -192,25 +256,45 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#Next.js</span> <span>#TailwindCSS</span>
               </div>
-            </a>
+            </article>
 
-            <a 
-              href="https://github.com/Adelineemugisha/Rwandan_food" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
+            <article
+              className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
             >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://rwandan-food.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    Live Demo ↗
+                  </a>
+                  <a
+                    href="https://github.com/Adelineemugisha/Rwandan_food"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-              Taste of Rwanda
+                <a
+                  href="https://github.com/Adelineemugisha/Rwandan_food"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-emerald-700"
+                >
+                  Taste of Rwanda
+                </a>
               </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 The platform offers curated inspiration for everyday meals and special occasions, teaching 
@@ -219,26 +303,46 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#Next.js</span> <span>#TailwindCSS</span>
               </div>
-            </a>
+            </article>
 
-                <a 
-              href="https://github.com/Adelineemugisha/University-in-Rwanda" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
-            >
+                <article
+                  className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
+                >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   Frontend Web
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://university-in-rwanda.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    Live Demo ↗
+                  </a>
+                  <a
+                    href="https://github.com/Adelineemugisha/University-in-Rwanda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-              EduLink RW
-              </h3>
+                    <a
+                      href="https://github.com/Adelineemugisha/University-in-Rwanda"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors duration-200 hover:text-emerald-700"
+                    >
+                      EduLink RW
+                    </a>
+                  </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 An impactful educational access application engineered to simplify the university search and application process in Rwanda. It provides
                  a user-centric directory where students can explore academic programs, compare institutions, and launch direct, secure 
@@ -247,26 +351,38 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#React.js</span> <span>#TailwindCSS</span>
               </div>
-            </a>
+                </article>
 
-        <a 
-              href="https://github.com/Adelineemugisha/IOT_practic" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
-            >
+        <article
+          className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
+        >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                   IOT(Internet of Things)
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/Adelineemugisha/IOT_practic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
+            <a
+              href="https://github.com/Adelineemugisha/IOT_practic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-200 hover:text-emerald-700"
+            >
               SmartLink Hardware
-              </h3>
+            </a>
+          </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A robust IoT integration project designed to handle dynamic Wi-Fi connection pooling on embedded systems.
                  Engineered inside the PlatformIO ecosystem, it enables hardware modules to scan networks, authenticate securely, and 
@@ -275,26 +391,46 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#C++</span> <span>#IOT</span> <span>#PlatformIo</span>
               </div>
-            </a>
+        </article>
 
-        <a 
-              href="https://github.com/Adelineemugisha/calculator" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
-            >
+        <article
+          className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
+        >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                 fronted/backend
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://calculator-adelinem.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    Live Demo ↗
+                  </a>
+                  <a
+                    href="https://github.com/Adelineemugisha/calculator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
+            <a
+              href="https://github.com/Adelineemugisha/calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-200 hover:text-emerald-700"
+            >
               Mobile calculator
-              </h3>
+            </a>
+          </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                 A sleek utility application designed to demonstrate mastery over interface layout principles and event-driven logic.
                It combines clean visual hierarchy with efficient input processing to create a seamless, accessible user workflow.
@@ -302,52 +438,76 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#JavaScript</span> <span>#Html</span> <span>#CSS</span>
               </div>
-            </a>
+        </article>
 
-             <a 
-              href="https://github.com/Adelineemugisha/tetanic-supervised" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
-            >
+             <article
+               className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
+             >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                 Machine learning
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/Adelineemugisha/tetanic-supervised"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-              Titanic Passenger Survival Predictive Model
-              </h3>
+                 <a
+                   href="https://github.com/Adelineemugisha/tetanic-supervised"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="transition-colors duration-200 hover:text-emerald-700"
+                 >
+                   Titanic Passenger Survival Predictive Model
+                 </a>
+               </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
                Designed an end-to-end binary classification pipeline to predict passenger survival outcomes based on demographic and socio-economic indicators.
               </p>
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                 <span>#Python</span> <span>#Kaggle</span> <span>#ML</span>
               </div>
-            </a>
+             </article>
 
-   <a 
-              href="https://github.com/Adelineemugisha/My-diary" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400 transition-all duration-200 block text-left col-span-1"
-            >
+   <article
+     className="group reveal project-card rounded-xl border-4 border-emerald-300 bg-emerald-50/50 p-8 md:p-10 hover:bg-emerald-100 hover:border-emerald-400"
+   >
+
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm sm:text-base font-sans font-black text-emerald-800 bg-emerald-100 px-6 py-1.5 rounded-md uppercase tracking-wider">
                 fronted/backend
                 </span>
-                <span className="text-emerald-700 group-hover:text-white group-hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold transition-colors">
-                  GitHub ↗
-                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/Adelineemugisha/My-diary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-pill text-emerald-700 hover:text-white hover:bg-emerald-600 px-3 py-1 rounded-md text-sm font-bold"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-black text-emerald-900 mt-4 mb-3 group-hover:underline tracking-tight">
-              Student notes keeper
-              </h3>
+       <a
+         href="https://github.com/Adelineemugisha/My-diary"
+         target="_blank"
+         rel="noopener noreferrer"
+         className="transition-colors duration-200 hover:text-emerald-700"
+       >
+         Student notes keeper
+       </a>
+     </h3>
               <p className="text-black text-base sm:text-lg mb-6 leading-relaxed font-medium">
               A responsive note-taking application engineered with dynamic state management to bridge multimedia inputs. It integrates 
               audio recording APIs with persistent text storage, ensuring seamless data serialization and rapid retrieval of academic notes.
@@ -355,17 +515,17 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 text-sm sm:text-base font-sans text-emerald-800 font-black bg-emerald-100 p-2.5 rounded-md w-fit">
                  <span>#Backend</span> <span>#JavaScript</span> <span>#Postgress</span>
               </div>
-            </a>
+   </article>
 
           </div>
           </section>
 
-        <section id="skills" className="py-20 scroll-mt-16">
+        <section id="skills" className="reveal py-20 scroll-mt-16">
           <h2 className="text-3xl font-black text-emerald-900 mb-8 flex items-center gap-2">
             <span className="text-emerald-600 font-sans text-xl">03.</span> Technical Capabilities
           </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-emerald-50 p-5 rounded-md border border-emerald-200">
+          <div className="reveal-group grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="reveal bg-emerald-50 p-5 rounded-md border border-emerald-200">
               <h3 className="text-emerald-700 font-bold mb-3">Languages & Backend</h3>
               <ul className="space-y-1 text-sm text-black font-sans">
                 <li>• Java / JavaScript</li>
@@ -374,7 +534,7 @@ export default function Portfolio() {
                 <li>• SQL / NoSQL</li>
               </ul>
             </div>
-            <div className="bg-emerald-50 p-5 rounded-md border border-emerald-200">
+            <div className="reveal bg-emerald-50 p-5 rounded-md border border-emerald-200">
               <h3 className="text-emerald-700 font-bold mb-3">Frontend & Mobile</h3>
               <ul className="space-y-1 text-sm text-black font-sans">
                 <li>• React.js / Next.js</li>
@@ -383,7 +543,7 @@ export default function Portfolio() {
                 <li>• Tailwind CSS</li>
               </ul>
             </div>
-            <div className="bg-emerald-50 p-5 rounded-md border border-emerald-200">
+            <div className="reveal bg-emerald-50 p-5 rounded-md border border-emerald-200">
               <h3 className="text-emerald-700 font-bold mb-3">AI & Product Strategy</h3>
               <ul className="space-y-1 text-sm text-black font-sans">
                 <li>• Machine Learning</li>
@@ -398,7 +558,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="case-studies" className="py-20 scroll-mt-16">
+        <section id="case-studies" className="reveal py-20 scroll-mt-16">
           <h2 className="text-3xl font-bold text-emerald-900 mb-8 flex items-center gap-2">
             <span className="text-emerald-600 font-sans text-xl">04.</span> Product & UX Strategy
           </h2>
@@ -419,7 +579,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="estateflow" className="py-20 scroll-mt-16">
+        <section id="estateflow" className="reveal py-20 scroll-mt-16">
           <h2 className="text-3xl font-bold text-emerald-900 mb-8 flex items-center gap-2">
             <span className="text-emerald-600 font-sans text-xl">05.</span> EstateFlow
           </h2>
@@ -443,7 +603,7 @@ export default function Portfolio() {
                 href="https://real-estate-fronted-nu.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+                className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
               >
                 Live Frontend App ↗
               </a>
@@ -451,7 +611,7 @@ export default function Portfolio() {
                 href="https://real-estate-yscm.onrender.com/docs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+                className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
               >
                 Live Backend API ↗
               </a>
@@ -459,7 +619,7 @@ export default function Portfolio() {
                 href="https://github.com/Adelineemugisha/real_estate_fronted.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+                className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
               >
                 Frontend GitHub
               </a>
@@ -467,7 +627,7 @@ export default function Portfolio() {
                 href="https://github.com/Adelineemugisha/Real-Estate.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
+                className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors"
               >
                 Backend GitHub
               </a>
@@ -475,7 +635,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="contact" className="py-20 text-center max-w-xl mx-auto scroll-mt-16">
+        <section id="contact" className="reveal-fade py-20 text-center max-w-xl mx-auto scroll-mt-16">
           <h2 className="text-3xl font-bold text-emerald-900 mb-4">Get In Touch</h2>
           <p className="text-black mb-8 text-sm leading-relaxed">
             I am currently actively seeking full time, Junior software engineering, or associate product management roles. 
@@ -486,7 +646,7 @@ export default function Portfolio() {
               href="https://www.linkedin.com/in/adeline-mugisha-3206593bb" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
+              className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
             >
               LinkedIn
             </a>
@@ -495,20 +655,20 @@ export default function Portfolio() {
               href="https://github.com/Adelineemugisha" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
+              className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
             >
               Github
             </a>
 
             <a 
               href="mailto:adelineemugisha@gmail.com"
-              className="inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
+              className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
             >
               adelineemugisha@gmail.com
             </a>
             <a 
               href="tel:+250791918718"
-              className="inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
+              className="interactive inline-block rounded-md bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition-colors"
             >
               +250 791918718
             </a>
